@@ -8,7 +8,7 @@
 }
 
 .projects-section h2 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 60px;
   color: #00bfff;
   font-weight: bold;
@@ -17,15 +17,17 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  gap: 30px;
   width: 100%;
   padding: 0 40px;
   box-sizing: border-box;
+  
 }
 
 .project-card {
   position: relative;
-  height: 380px;
+  height: 300px;
+  max-width: 1000px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -78,7 +80,7 @@
 
 .overlay p {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ddd;
   line-height: 1.6;
   max-width: 90%;
