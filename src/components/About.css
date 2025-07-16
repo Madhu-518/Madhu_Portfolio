@@ -1,7 +1,7 @@
 .about {
   background-color: #121212;
   color: white;
-  padding: 6vh 5vw; /* Fluid vertical & horizontal spacing */
+  padding: 80px 30px;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .about-title {
-  font-size: clamp(2rem, 4vw, 3.2rem); /* Responsive font size */
+  font-size: 3rem;
   font-weight: 700;
   color: #00bfff;
   margin-bottom: 40px;

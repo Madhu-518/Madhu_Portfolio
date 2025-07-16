@@ -1,40 +1,44 @@
+/* Contact Section */
 .contact {
   background-color: #121212;
   color: #fff;
-  padding: 100px 30px;
+  padding: 80px 30px;         /* ⬅️ Increase/decrease vertical spacing here */
   text-align: center;
-  min-height: 100vh;
+  min-height: 80vh;           /* ⬅️ Remove or reduce for shorter section */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Title */
 .contact-title {
-  font-size: 3rem; /* ↑ was 3rem */
+  font-size: 3rem;
   font-weight: 700;
   color: #00bfff;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
+/* Subtitle */
 .contact-subtitle {
-  font-size: 1.4rem; /* ↑ was 1.2rem */
+  font-size: 1.3rem;
   color: #bbb;
   max-width: 700px;
-  margin: 0 auto 50px;
-  line-height: 1.8;
+  margin-bottom: 45px;
+  line-height: 1.6;
 }
 
+/* Contact Form */
 .contact-form {
   width: 100%;
-  max-width: 500px;
+  max-width: 420px;
   background-color: #1d1d1d;
-  padding: 45px;
+  padding: 40px 30px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 18px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -44,13 +48,13 @@
 
 .contact-form input,
 .contact-form textarea {
-  padding: 18px 20px;
+  padding: 16px 18px;
   border: none;
   border-radius: 10px;
   background-color: #2a2a2a;
   color: #fff;
-  font-size: 1.1rem; /* ↑ font size */
-  transition: background 0.3s ease;
+  font-size: 1.05rem;
+  transition: background 0.3s ease, outline 0.3s ease;
 }
 
 .contact-form input:focus,
@@ -61,29 +65,31 @@
 
 .contact-form textarea {
   resize: vertical;
-  min-height: 140px;
+  min-height: 130px;
 }
 
+/* Submit Button */
 .contact-form button {
-  padding: 16px;
+  padding: 14px;
   border: none;
   border-radius: 30px;
   background: linear-gradient(to right, #00bfff, #007bff);
   color: white;
   font-weight: 600;
-  font-size: 1.2rem; /* ↑ was 1.05rem */
+  font-size: 1.15rem;
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .contact-form button:hover {
   background: linear-gradient(to right, #007bff, #00bfff);
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
+/* Email Info */
 .email-info {
-  margin-top: 35px;
-  font-size: 1.1rem; /* ↑ was 1rem */
+  margin-top: 40px;
+  font-size: 1.05rem;
   color: #aaa;
 }
 
@@ -101,25 +107,38 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .contact {
+    padding: 70px 20px;        /* ⬅️ Smaller padding for mobile */
+    min-height: auto;          /* ⬅️ Prevent unnecessary empty space on small screens */
+  }
+
   .contact-title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .contact-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 35px;
   }
 
   .contact-form {
-    padding: 35px 20px;
+    padding: 30px 20px;
+    gap: 15px;
   }
 
   .contact-form input,
   .contact-form textarea {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    padding: 14px 16px;
   }
 
   .contact-form button {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 13px;
+  }
+
+  .email-info {
+    font-size: 0.95rem;
+    margin-top: 30px;
   }
 }
